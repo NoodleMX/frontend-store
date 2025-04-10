@@ -3,7 +3,7 @@
   --primary: #9c27b0;
   --primary-dark: #89119d;
   --secondary: #ffce00;
-  --secondary-dark: rgb(233, 287, 2);
+  --secondary-dark: rgb(233, 187, 2);
   --white: #ffffff;
   --black: #000000;
   --main-font: "Staatliches", sans-serif;
@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  width: 100%;
 }
 .container {
   max-width: 120rem;
@@ -112,9 +112,6 @@ h3 {
   background-color: var(--primary-dark);
   padding: 1rem;
 }
-.product__image {
-  width: 100%;
-}
 .product__name {
   font-size: 4rem;
 }
@@ -167,7 +164,6 @@ h3 {
 }
 .about-us__image {
   grid-row: 1 / 2;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .about-us__image {
@@ -185,7 +181,6 @@ h3 {
   .blocks {
     grid-template-columns: repeat(4, 1fr);
   }
-  
 }
 .block {
   text-align: center;
@@ -193,6 +188,40 @@ h3 {
 .block__title {
   margin: 0;
 }
-.block__image {
-  width: 100%;
+
+/* Product Page */
+@media (min-width: 768px) {
+  .shirt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.form__field {
+  border: 1rem solid var(--primary-dark);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 1rem;
+}
+.form__field::placeholder {
+  color: var(--white);
+}
+.form__submit {
+  background-color: var(--secondary);
+  border: none;
+  font-family: 2rem;
+  font-family: var(--main-font);
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  grid-column: 1 / 3;
+}
+.form__submit:hover {
+  cursor: pointer;
+  background-color: var(--secondary-dark);
 }
