@@ -1,0 +1,10 @@
+/* Custom Properties */
+:root {
+  --primary: #9c27b0;
+  --primary-dark: #891190;
+  --secondary: #ffce00;
+  --secondary-dark: rgb(233, 287, 2);
+  --white: #ffffff;
+  --black: #000000;
+  --main-font: "Staatliches", cursive;
+}
