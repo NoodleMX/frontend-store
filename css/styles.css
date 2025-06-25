@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #9c27b0;
+  --primary-color-dark: #89119d;
+  --secondary-color: #ffce00;
+  --secondary-color-dark: rgb(233 287 2);
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --main-font: "Staatliches", sans-serif;
+}
