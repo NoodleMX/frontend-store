@@ -97,3 +97,10 @@ h3 {
 :is(.navigation__link:hover, .navigation__link--active) {
   color: var(--secondary-color);
 }
+
+/* Products */
+.product {}
+.product__image {}
+.product__info {}
+.product__name {}
+.product__price {}
