@@ -45,9 +45,7 @@ img {
   max-width: 120rem;
   margin: 0 auto;
 }
-h1,
-h2,
-h3 {
+:is(h1, h2, h3) {
   text-align: center;
   color: var(--secondary-color);
   font-family: var(--main-font);
@@ -60,4 +58,30 @@ h2 {
 }
 h3 {
   font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  margin: 3rem 0;
+}
+
+/* Navigation */
+.navigation {
+  background-color: var(--primary-color-dark);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.navigation__link {
+  font-family: var(--main-font);
+  color: var(--white-color);
+  font-size: 3rem;
+}
+:is(.navigation__link:hover, .navigation__link--active) {
+  color: var(--secondary-color);
 }
