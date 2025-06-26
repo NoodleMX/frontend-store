@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontEnd Store</title>
+    <!-- CSS Resets and main styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,21 +12,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Header with logo -->
     <header class="header">
       <a href="./index.html">
         <img class="header__logo" src="./img/logo.png" alt="FrontEnd Store" />
       </a>
     </header>
 
+    <!-- Navigation bar -->
     <nav class="navigation">
       <a class="navigation__link navigation__link--active" href="./index.html">Store</a>
       <a class="navigation__link" href="./about.html">About Us</a>
     </nav>
 
+    <!-- Main content: Product grid -->
     <main class="container">
       <h1>Our Products</h1>
 
       <div class="grid">
+        <!-- Product cards: Each product links to the product detail page -->
         <div class="product">
           <a href="./product.html">
             <img class="product__image" src="./img/1.jpg" alt="T-shirt image" />
@@ -171,6 +176,7 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <p class="footer__text">FrontEnd Store - All Rights Reserved &copy; 2025</p>
     </footer>
