@@ -1,4 +1,4 @@
-/* Custom CSS Variables */
+/* Custom CSS Variables for theme colors and fonts */
 :root {
   --primary-color: #9c27b0;
   --primary-color-dark: #89119d;
@@ -10,6 +10,7 @@
   --main-font: "Staatliches", sans-serif;
 }
 
+/* Global box-sizing and base font size */
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10px = 1rem */
@@ -20,7 +21,7 @@ html {
   box-sizing: inherit;
 }
 
-/* Global Styles */
+/* Global Styles for body, paragraphs, links, images, and container */
 body {
   background-color: var(--primary-color);
   font-size: 1.6rem; /* 16px */
@@ -56,7 +57,7 @@ h3 {
   font-size: 2.4rem;
 }
 
-/* Header */
+/* Header styles */
 .header {
   display: flex;
   justify-content: center;
@@ -65,7 +66,7 @@ h3 {
   margin: 3rem 0;
 }
 
-/* Footer */
+/* Footer styles */
 .footer {
   background-color: var(--primary-color-dark);
   padding: 1rem 0;
@@ -77,7 +78,7 @@ h3 {
   font-size: 2.2rem;
 }
 
-/* Navigation */
+/* Navigation bar styles */
 .navigation {
   background-color: var(--primary-color-dark);
   padding: 1rem 0;
@@ -94,7 +95,7 @@ h3 {
   color: var(--secondary-color);
 }
 
-/* Grid */
+/* Product grid styles */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -105,7 +106,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Products */
+/* Product card styles */
 .product {
   background-color: var(--primary-color-dark);
   padding: 1rem;
@@ -124,7 +125,7 @@ h3 {
   line-height: 1.2;
 }
 
-/* Graphics */
+/* Decorative graphics styles */
 .graphic {
   min-height: 30rem;
   background-repeat: no-repeat;
@@ -146,7 +147,7 @@ h3 {
   }
 }
 
-/* About */
+/* About page grid and image styles */
 .about {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -166,7 +167,7 @@ h3 {
   }
 }
 
-/* Blocks */
+/* Feature blocks styles */
 .blocks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -184,7 +185,7 @@ h3 {
   margin: 0;
 }
 
-/* Product Page */
+/* Product detail page styles */
 @media (min-width: 768px) {
   .shirt {
     display: grid;
